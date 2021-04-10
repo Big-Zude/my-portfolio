@@ -19,13 +19,18 @@ import project6 from "../images/react.png";
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    background: "#f1f1f1`",
     height: "100%",
   },
   cardContainer: {
     maxWidth: 345,
     margin: "3rem auto",
   },
+  // content: {
+  //   flexGrow: 1,
+  //   backgroundColor: theme.palette.background.default,
+  //   paddingLeft: '17%'
+  // }
 }));
 
 const projects = [
@@ -82,6 +87,7 @@ const projects = [
 const Portfolio = () => {
   const classes = useStyles();
   return (
+    // <div className={classes.content}>
     <Box component="div" className={classes.mainContainer}>
       <Grid container justify="center">
         {/* Projects */}
@@ -116,7 +122,8 @@ const Portfolio = () => {
           </Grid>
         ))}
       </Grid>
-    </Box>
+      </Box>
+      // </div>
   );
 };
 

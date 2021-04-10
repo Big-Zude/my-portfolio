@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import Particles from "./Particles";
+import ParticlesBg from "particles-bg";
 
 const Home = () => {
   return (
-    <React.Fragment>
+    <div>
       <Header />
-      <Particles />
-    </React.Fragment>
+      <ParticlesBg num={100} type="thick" bg={true}/>
+    </div>
   );
 };
 

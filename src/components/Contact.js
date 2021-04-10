@@ -36,6 +36,11 @@ const useStyles = makeStyles((theme) => ({
   field: {
     margin: "1rem 0rem",
   },
+   content: {
+    flexGrow: 1,
+    backgroundColor: theme.palette.background.default,
+    paddingLeft: 0
+  }
 }));
 
 const InputField = withStyles({
@@ -64,6 +69,7 @@ const InputField = withStyles({
 const Contact = () => {
   const classes = useStyles();
   return (
+     
     <Box component="div" className={classes.contactContainer}>
       <Grid container justify="center">
         <Box component="form" className={classes.form}>
@@ -101,7 +107,7 @@ const Contact = () => {
           </Button>
         </Box>
       </Grid>
-    </Box>
+      </Box>
   );
 };
 

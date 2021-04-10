@@ -107,11 +107,17 @@ const useStyles = makeStyles((theme) => ({
   subtitle1: {
     color: "tan",
   },
+  // content: {
+  //   flexGrow: 1,
+  //   backgroundColor: theme.palette.background.default,
+  //   paddingLeft: '17%'
+  // }
 }));
 
 const Resume = () => {
   const classes = useStyles();
   return (
+    
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
         Working Experience
@@ -230,7 +236,8 @@ const Resume = () => {
           </Typography>
         </Box>
       </Box>
-    </Box>
+      </Box>
+      
   );
 };
 

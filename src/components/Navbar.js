@@ -19,23 +19,26 @@ import Apps from "@material-ui/icons/Apps";
 import ContactMail from "@material-ui/icons/ContactMail";
 import { makeStyles } from "@material-ui/core/styles";
 import avatar from "../avatar.png";
+import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 import Footer from "../components/Footer";
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
-    background: "#222",
+    background: "#000000",
     margin: 0,
   },
   arrow: {
-    color: "tomato",
+    
+    marginLeft:'auto',
+    color: "#FFD700",
   },
   title: {
-    color: "tan",
+    color: "#FFD700",
   },
   menuSliderContainer: {
     width: 250,
-    background: "#511",
+    background: "#000000",
     height: "100%",
   },
   avatar: {
@@ -45,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(13),
   },
   listItem: {
-    color: "tan",
+    color: "#FFD700",
   },
 }));
 
@@ -90,16 +93,18 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
-            <IconButton onClick={() => setOpen(true)}>
-              <ArrowBack className={classes.arrow} />
-            </IconButton>
             <Typography variant="h5" className={classes.title}>
-              Portfolio
+              Zude Mwango
             </Typography>
+            <div className={classes.arrow} >
+            <IconButton color="inherit" onClick={() => setOpen(true)}>
+              <MenuRoundedIcon />
+              </IconButton>
+              </div>
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={open} anchor="right" onClose={() => setOpen(false)}>
+      <Drawer open={open} anchor="left" onClose={() => setOpen(false)}>
         {sideList()}
         <Footer />
       </Drawer>

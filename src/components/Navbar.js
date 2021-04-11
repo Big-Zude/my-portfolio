@@ -17,7 +17,7 @@ import Home from '@material-ui/icons/Home';
 import Apps from '@material-ui/icons/Apps';
 import ContactMail from '@material-ui/icons/ContactMail';
 import { makeStyles } from '@material-ui/core/styles';
-import avatar from '../zude.jpg';
+import avatar from '../zude1.jpg';
 import MenuRoundedIcon from '@material-ui/icons/MenuRounded';
 
 import Footer from '../components/Footer';

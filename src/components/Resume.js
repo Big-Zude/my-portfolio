@@ -1,123 +1,119 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import Box from "@material-ui/core/Box";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
+import Box from '@material-ui/core/Box';
+import resume from '../../src/resume.jpg'
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#233",
+    backgroundImage: `url(${resume})`,
+    backgroundSize: 'contain'
   },
   timeLine: {
-    position: "relative",
-    padding: "1rem",
-    margin: "o auto",
-    "&:before": {
+    position: 'relative',
+    padding: '1rem',
+    margin: 'o auto',
+    '&:before': {
       content: "''",
-      position: "absolute",
-      height: "100%",
-      border: "1px solid tan",
-      right: "40px",
-      top: 0,
+      position: 'absolute',
+      height: '100%',
+      border: '1px solid tan',
+      right: '40px',
+      top: 0
     },
-    "&:after": {
+    '&:after': {
       content: "''",
-      display: "table",
-      clear: "both",
+      display: 'table',
+      clear: 'both'
     },
-    [theme.breakpoints.up("md")]: {
-      padding: "2rem",
-      "&:before": {
-        left: "calc(50% - 1px)",
-        right: "auto",
-      },
-    },
+    [theme.breakpoints.up('md')]: {
+      padding: '2rem',
+      '&:before': {
+        left: 'calc(50% - 1px)',
+        right: 'auto'
+      }
+    }
   },
   timeLineItem: {
-    padding: "1rem",
-    borderBottom: "2px solid tan",
-    position: "relative",
-    margin: "1rem 3rem 1rem 1rem",
-    clear: "both",
-    "&:after": {
+    padding: '1rem',
+    borderBottom: '2px solid tan',
+    position: 'relative',
+    margin: '1rem 3rem 1rem 1rem',
+    clear: 'both',
+    '&:after': {
       content: "''",
-      position: "absolute",
+      position: 'absolute'
     },
-    "&:before": {
+    '&:before': {
       content: "''",
-      position: "absolute",
-      right: "-0.625rem",
-      top: "calc(50% - 5px)",
-      borderStyle: "solid",
-      borderColor: "tomato tomato transparent transparent",
-      borderWidth: "0.625rem",
-      transform: "rotate(45deg)",
+      position: 'absolute',
+      right: '-0.625rem',
+      top: 'calc(50% - 5px)',
+      borderStyle: 'solid',
+      borderColor: 'tomato tomato transparent transparent',
+      borderWidth: '0.625rem',
+      transform: 'rotate(45deg)'
     },
-    [theme.breakpoints.up("md")]: {
-      width: "44%",
-      margin: "1rem",
-      "&:nth-of-type(2n)": {
-        float: "right",
-        margin: "1rem",
-        borderColor: "tan",
+    [theme.breakpoints.up('md')]: {
+      width: '44%',
+      margin: '1rem',
+      '&:nth-of-type(2n)': {
+        float: 'right',
+        margin: '1rem',
+        borderColor: 'tan'
       },
-      "&:nth-of-type(2n):before": {
-        right: "auto",
-        left: "-0.625rem",
-        borderColor: "transparent transparent tomato tomato",
-      },
-    },
+      '&:nth-of-type(2n):before': {
+        right: 'auto',
+        left: '-0.625rem',
+        borderColor: 'transparent transparent tomato tomato'
+      }
+    }
   },
   timeLineYear: {
-    textAlign: "center",
-    maxWidth: "9.375rem",
-    margin: "0 3rem 0 auto",
-    fontSize: "1.8rem",
-    color: "#fff",
-    background: "tomato",
+    textAlign: 'center',
+    maxWidth: '9.375rem',
+    margin: '0 3rem 0 auto',
+    fontSize: '1.8rem',
+    color: '#fff',
+    background: 'tomato',
     lineHeight: 1,
-    padding: "0.5rem 1rem",
-    "&:before": {
-      display: "none",
+    padding: '0.5rem 1rem',
+    '&:before': {
+      display: 'none'
     },
-    [theme.breakpoints.up("md")]: {
-      textAlign: "center",
-      margin: "0 auto",
-      "&:nth-of-type(2n)": {
-        float: "none",
-        margin: "0 auto",
+    [theme.breakpoints.up('md')]: {
+      textAlign: 'center',
+      margin: '0 auto',
+      '&:nth-of-type(2n)': {
+        float: 'none',
+        margin: '0 auto'
       },
-      "&:nth-of-type(2n):before": {
-        display: "none",
-      },
-    },
+      '&:nth-of-type(2n):before': {
+        display: 'none'
+      }
+    }
   },
   heading: {
-    color: "tomato",
-    padding: "3rem 0",
-    textTransform: "uppercase",
+    color: 'tomato',
+    padding: '3rem 0',
+    textTransform: 'uppercase'
   },
   subHeading: {
-    color: "#fff",
+    color: '#fff',
     padding: 0,
-    textTransform: "uppercase",
+    textTransform: 'uppercase'
   },
   body1: {
-    color: "tomato",
+    color: 'tomato'
   },
   subtitle1: {
-    color: "tan",
-  },
-  // content: {
-  //   flexGrow: 1,
-  //   backgroundColor: theme.palette.background.default,
-  //   paddingLeft: '17%'
-  // }
+    color: 'tan'
+  }
 }));
 
 const Resume = () => {
   const classes = useStyles();
   return (
-    
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
         Working Experience
@@ -236,8 +232,7 @@ const Resume = () => {
           </Typography>
         </Box>
       </Box>
-      </Box>
-      
+    </Box>
   );
 };
 

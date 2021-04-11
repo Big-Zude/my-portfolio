@@ -1,31 +1,31 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Box from "@material-ui/core/Box";
-import Grid from "@material-ui/core/Grid";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+import Typography from '@material-ui/core/Typography';
 
-import project1 from "../images/html-css-javascript-lg.jpg";
-import project2 from "../images/html-css-javascript.jpg";
-import project3 from "../images/javascript-fullstack.jpg";
-import project4 from "../images/mern-stack.jpg";
-import project5 from "../images/react-redux.jpg";
-import project6 from "../images/react.png";
+import project1 from '../images/html-css-javascript-lg.jpg';
+import project2 from '../images/html-css-javascript.jpg';
+import project3 from '../images/javascript-fullstack.jpg';
+import project4 from '../images/mern-stack.jpg';
+import project5 from '../images/react-redux.jpg';
+import project6 from '../images/react.png';
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    background: "#f1f1f1`",
-    height: "100%",
+    background: '#f1f1f1`',
+    height: '100%'
   },
   cardContainer: {
     maxWidth: 345,
-    margin: "3rem auto",
-  },
+    margin: '3rem auto'
+  }
   // content: {
   //   flexGrow: 1,
   //   backgroundColor: theme.palette.background.default,
@@ -35,53 +35,53 @@ const useStyles = makeStyles((theme) => ({
 
 const projects = [
   {
-    name: "Project 1",
+    name: 'Project 1',
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
     consequatur magni quod nesciunt necessitatibus molestiae non
     eligendi, magnam est aliquam recusandae? Magnam soluta minus
     iste alias sunt veritatis nisi dolores!`,
-    image: project1,
+    image: project1
   },
   {
-    name: "Project 2",
+    name: 'Project 2',
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
-    image: project2,
+    image: project2
   },
   {
-    name: "Project 3",
+    name: 'Project 3',
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
-    image: project3,
+    image: project3
   },
   {
-    name: "Project 4",
+    name: 'Project 4',
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
-    image: project4,
+    image: project4
   },
   {
-    name: "Project 5",
+    name: 'Project 5',
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
-    image: project5,
+    image: project5
   },
   {
-    name: "Project 6",
+    name: 'Project 6',
     description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
     consequatur magni quod nesciunt necessitatibus molestiae non\
     eligendi, magnam est aliquam recusandae? Magnam soluta minus\
     iste alias sunt veritatis nisi dolores!`,
-    image: project6,
-  },
+    image: project6
+  }
 ];
 
 const Portfolio = () => {
@@ -122,8 +122,8 @@ const Portfolio = () => {
           </Grid>
         ))}
       </Grid>
-      </Box>
-      // </div>
+    </Box>
+    // </div>
   );
 };
 

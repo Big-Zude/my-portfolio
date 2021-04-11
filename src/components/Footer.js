@@ -1,23 +1,23 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import BottomNavigation from "@material-ui/core/BottomNavigation";
-import BottomNavigationAction from "@material-ui/core/BottomNavigationAction";
-import Twitter from "@material-ui/icons/Twitter";
-import { GitHub, LinkedIn } from "@material-ui/icons";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import BottomNavigation from '@material-ui/core/BottomNavigation';
+import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import Twitter from '@material-ui/icons/Twitter';
+import { GitHub, LinkedIn } from '@material-ui/icons';
 
 const useStyles = makeStyles({
   bottomNavContainer: {
-    background: "#222",
+    background: '#222'
   },
   root: {
-    "& .MuiSvgIcon-root": {
-      fill: "#ffffff",
-      "&:hover": {
-        fill: "tomato",
-        fontSize: "1.8rem",
-      },
-    },
-  },
+    '& .MuiSvgIcon-root': {
+      fill: '#ffffff',
+      '&:hover': {
+        fill: '#FFD700',
+        fontSize: '1.8rem'
+      }
+    }
+  }
 });
 
 const Footer = () => {
@@ -25,9 +25,17 @@ const Footer = () => {
 
   return (
     <BottomNavigation className={classes.bottomNavContainer}>
-      <BottomNavigationAction icon={<GitHub />} className={classes.root} />
-      <BottomNavigationAction icon={<Twitter />} className={classes.root} />
-      <BottomNavigationAction icon={<LinkedIn />} className={classes.root} />
+      <a href="https://github.com/Big-Zude">
+        <BottomNavigationAction icon={<GitHub />} className={classes.root} />
+      </a>
+
+      <a href="https://twitter.com/Big_Zude">
+        <BottomNavigationAction icon={<Twitter />} className={classes.root} />
+      </a>
+
+      <a href="https://www.linkedin.com/in/zude-mwango-0a17b3122/">
+        <BottomNavigationAction icon={<LinkedIn />} className={classes.root} />
+      </a>
     </BottomNavigation>
   );
 };

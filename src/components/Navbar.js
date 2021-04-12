@@ -11,7 +11,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Avatar from '@material-ui/core/Avatar';
 import Divider from '@material-ui/core/Divider';
-import Typography from '@material-ui/core/Typography';
+import { Typography, Container, Hidden } from '@material-ui/core';
 import AssignmentInd from '@material-ui/icons/AssignmentInd';
 import Home from '@material-ui/icons/Home';
 import Apps from '@material-ui/icons/Apps';
@@ -32,7 +32,9 @@ const useStyles = makeStyles((theme) => ({
     color: '#FFD700'
   },
   title: {
-    color: '#FFD700'
+    color: '#FFD700',
+    padding: 13,
+    
   },
   menuSliderContainer: {
     paddingTop: 20,
@@ -47,15 +49,26 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(13)
   },
   listItem: {
-    color: '#FFD700'
+    color: '#FFD700',
+    padding: 0
+  },
+  navbarDisplayFlex: {
+    display: `flex`,
+    justifyContent: `space-around`
+  },
+  navDisplayFlex: {
+    marginLeft:'auto',
+     display: `flex`,
+    justifyContent: `space-around`
   }
 }));
 
 const menuItems = [
-  { listIcon: <Home />, listText: 'Home', listPath: '/' },
-  { listIcon: <AssignmentInd />, listText: 'Resume', listPath: '/resume' },
-  { listIcon: <Apps />, listText: 'Portfolio', listPath: '/portfolio' },
-  { listIcon: <ContactMail />, listText: 'Contact', listPath: '/contact' }
+  { listText: 'Home', listPath: '/' },
+  { listText: 'Experience', listPath: '/resume' },
+  { listText: 'Articles', listPath: '/resume' },
+  { listText: 'Projects', listPath: '/portfolio' },
+  { listText: 'Contact', listPath: '/contact' }
 ];
 
 const Navbar = () => {
@@ -92,21 +105,50 @@ const Navbar = () => {
       <Box component="nav">
         <AppBar position="static" className={classes.appbar}>
           <Toolbar>
-            <Typography variant="h5" className={classes.title}>
-              Zude Mwango
-            </Typography>
-            <div className={classes.arrow}>
-              <IconButton color="inherit" onClick={() => setOpen(true)}>
-                <MenuRoundedIcon />
-              </IconButton>
-            </div>
+            <Container className={classes.navbarDisplayFlex}>
+              <Typography variant="h5" className={classes.title}>
+                Zude Mwango
+              </Typography>
+              <Hidden mdUp>
+                <div className={classes.arrow}>
+                  <IconButton color="inherit" onClick={() => setOpen(true)}>
+                    <MenuRoundedIcon />
+                  </IconButton>
+                </div>
+              </Hidden>
+              <Hidden smDown>
+                <List
+                  component="nav"
+                  aria-labelledby="main navigation"
+                  className={classes.navDisplayFlex}
+                >
+                  {menuItems.map((item, i) => (
+                    <ListItem
+                      button
+                      key={i}
+                      className={classes.listItem}
+                      onClick={() => setOpen(false)}
+                      component={Link}
+                      to={item.listPath}
+                    >
+                      <ListItemIcon className={classes.listItem}>
+                        {item.listIcon}
+                      </ListItemIcon>
+                      <ListItemText primary={item.listText} />
+                    </ListItem>
+                  ))}
+                </List>
+              </Hidden>
+            </Container>
           </Toolbar>
         </AppBar>
       </Box>
-      <Drawer open={open} anchor="left" onClose={() => setOpen(false)}>
-        {sideList()}
-        <Footer />
-      </Drawer>
+      <Hidden mdUp>
+        <Drawer open={open} anchor="left" onClose={() => setOpen(false)}>
+          {sideList()}
+          <Footer />
+        </Drawer>
+      </Hidden>
     </React.Fragment>
   );
 };

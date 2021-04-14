@@ -10,7 +10,7 @@ import Article from './components/Articles';
 import ReactGA from 'react-ga';
 
 import './App.css';
-ReactGA.initialize('UA-153096172-1');
+ReactGA.initialize('G-DLC5PR8KFQ');
 
 function App() {
   const location = useLocation();

@@ -116,14 +116,14 @@ const Resume = () => {
   return (
     <Box component="header" className={classes.mainContainer}>
       <Typography variant="h4" align="center" className={classes.heading}>
-        Working Experience
+        Experience
       </Typography>
       <Box component="div" className={classes.timeLine}>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2013
+          2020
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -131,27 +131,28 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            web design
+            Frontend Software Developer
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            BongoHive Consult
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            • Participate in Stand-ups • Participate in Sprint planning •
+            Undertake Human Centered Design and Design Thinking processes •
+            Participate in developing in-house Software Applications for the
+            Company and clients. • Maintain bongohive website • Monthly client
+            website security scan
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2014
+          2019
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -159,27 +160,27 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            html & css
+            Frontend Software Developer Intern
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            BongoHive Consult
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Participate in Stand-ups. Participate in Sprint planning. Undertake
+            Human Centered Design and Design Thinking processes. Participate in
+            developing in-house Software Applications for the Company and
+            clients.
           </Typography>
         </Box>
         <Typography
           variant="h2"
           className={`${classes.timeLineYear} ${classes.timeLineItem}`}
         >
-          2015
+          2018
         </Typography>
         <Box component="div" className={classes.timeLineItem}>
           <Typography
@@ -187,20 +188,20 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Fullstack Javascript
+            Information Technology Intern
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Zambia National Broadcasting Corporation
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Successfully completed the training program that included lessons on
+            internet service providers, file server configuration, network
+            troubleshoot and fixing,computer maintenance, customer care etc.
+            Provided technical support to co-workers.
           </Typography>
         </Box>
         <Typography
@@ -215,20 +216,18 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Django & React
+            Data Entry
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
-            company name where worked
+            Africa Infrastructure Consultants
           </Typography>
           <Typography
             variant="subtitle1"
             align="center"
             className={classes.subtitle1}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas
-            ipsa, laudantium totam perferendis possimus voluptatibus tenetur.
-            Quasi voluptatibus, nam vitae eaque ad, officia laboriosam
-            repudiandae, rerum necessitatibus nisi mollitia.
+            Expansion Developments at East Park Mall Traffic counting and data
+            entry
           </Typography>
         </Box>
       </Box>

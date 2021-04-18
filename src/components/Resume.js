@@ -1,12 +1,13 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import { Typography, Button } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
-import resume from '../../src/resume.jpg'
+import resume from '../../src/resume.jpg';
+import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    backgroundImage: `url(${resume})`,
+    // backgroundImage: `url(${resume})`,
     backgroundSize: 'contain'
   },
   timeLine: {
@@ -50,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
       right: '-0.625rem',
       top: 'calc(50% - 5px)',
       borderStyle: 'solid',
-      borderColor: 'tomato tomato transparent transparent',
+      borderColor: '#3f51b5 tomato transparent transparent',
       borderWidth: '0.625rem',
       transform: 'rotate(45deg)'
     },
@@ -60,12 +61,12 @@ const useStyles = makeStyles((theme) => ({
       '&:nth-of-type(2n)': {
         float: 'right',
         margin: '1rem',
-        borderColor: 'tan'
+        
       },
       '&:nth-of-type(2n):before': {
         right: 'auto',
         left: '-0.625rem',
-        borderColor: 'transparent transparent tomato tomato'
+        borderColor: 'transparent transparent tomato #3f51b5'
       }
     }
   },
@@ -75,7 +76,7 @@ const useStyles = makeStyles((theme) => ({
     margin: '0 3rem 0 auto',
     fontSize: '1.8rem',
     color: '#fff',
-    background: 'tomato',
+    background: '#3f51b5',
     lineHeight: 1,
     padding: '0.5rem 1rem',
     '&:before': {
@@ -94,7 +95,7 @@ const useStyles = makeStyles((theme) => ({
     }
   },
   heading: {
-    color: 'tomato',
+    color: 'primary',
     padding: '3rem 0',
     textTransform: 'uppercase'
   },
@@ -107,7 +108,11 @@ const useStyles = makeStyles((theme) => ({
     color: 'tomato'
   },
   subtitle1: {
-    color: 'tan'
+    color: 'primary'
+  },
+  btn: {
+    color: 'white',
+    backgroundColor: '#3f51b5'
   }
 }));
 
@@ -118,6 +123,21 @@ const Resume = () => {
       <Typography variant="h4" align="center" className={classes.heading}>
         Experience
       </Typography>
+      <div align="center">
+        <a
+          href="https://drive.google.com/file/d/1GdjkCGIj4fPNZ70LSaNzhOIL6Q8_CEUR/view"
+          style={{ textDecoration: 'none' }}
+        >
+          <Button
+            className={classes.btn}
+            variant="contained"
+            size="large"
+            endIcon={<GetAppRoundedIcon />}
+          >
+            <Typography>Download Resume</Typography>
+          </Button>
+        </a>
+      </div>
       <Box component="div" className={classes.timeLine}>
         <Typography
           variant="h2"

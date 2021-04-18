@@ -20,22 +20,21 @@ import Footer from '../components/Footer';
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
-    background: '#000000',
+    background: 'primary',
     margin: 0
   },
   arrow: {
     marginLeft: 'auto',
-    color: '#FFD700'
+    color: '#3f51b5'
   },
   title: {
-    color: '#FFD700',
-    padding: 13,
-    
+    color: '#ffffff',
+    padding: 13
   },
   menuSliderContainer: {
     paddingTop: 20,
     width: 250,
-    background: '#000000',
+    background: '#3f51b5',
     height: '100%'
   },
   avatar: {
@@ -45,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
     height: theme.spacing(13)
   },
   listItem: {
-    color: '#FFD700',
+    color: '#ffffff',
     padding: 0
   },
   navbarDisplayFlex: {
@@ -53,8 +52,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: `space-around`
   },
   navDisplayFlex: {
-    marginLeft:'auto',
-     display: `flex`,
+    marginLeft: 'auto',
+    display: `flex`,
     justifyContent: `space-around`
   }
 }));
@@ -75,7 +74,7 @@ const Navbar = () => {
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
       <Avatar className={classes.avatar} src={avatar} alt="Zude Mwango" />
-      <Divider style={{ backgroundColor: '#FFD700' }} />
+      <Divider style={{ backgroundColor: 'primary' }} />
       <List>
         {menuItems.map((item, i) => (
           <ListItem
@@ -107,8 +106,8 @@ const Navbar = () => {
               </Typography>
               <Hidden mdUp>
                 <div className={classes.arrow}>
-                  <IconButton color="inherit" onClick={() => setOpen(true)}>
-                    <MenuRoundedIcon />
+                  <IconButton onClick={() => setOpen(true)}>
+                    <MenuRoundedIcon style={{color:'#ffffff'}} />
                   </IconButton>
                 </div>
               </Hidden>

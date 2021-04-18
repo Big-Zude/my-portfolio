@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh'
   },
   heading: {
-    color: 'tomato',
+    color: 'primary',
     textAlign: 'center',
     textTransform: 'uppercase',
     marginBottom: '1rem'
@@ -26,12 +26,12 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute'
   },
   input: {
-    color: '#fff'
+    color: '#000'
   },
   button: {
     marginTop: '1rem',
-    color: 'tomato',
-    borderColor: 'tan'
+    color: '#fff',
+    backGround: '#3f51b5'
   },
   field: {
     margin: '1rem 0rem'
@@ -46,21 +46,21 @@ const useStyles = makeStyles((theme) => ({
 const InputField = withStyles({
   root: {
     '& label.Mui-focused': {
-      color: 'tomato'
+      color: '#3f51b5'
     },
     '& label': {
-      color: 'tan'
+      color: '#3f51b5'
     },
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
-        borderColor: 'tan'
+        borderColor: '#3f51b5'
       },
       '&:hover fieldset': {
-        borderColor: 'tan'
+        borderColor: '#3f51b5'
       },
       '&.Mui-focused fieldset': {
         color: '#fff',
-        borderColor: 'tan'
+        borderColor: '#3f51b5'
       }
     }
   }
@@ -104,7 +104,8 @@ const Contact = () => {
               inputProps={{ className: classes.input }}
             />
             <Button
-              variant="outlined"
+              variant="contained"
+              color="primary"
               fullWidth={true}
               endIcon={<Send />}
               className={classes.button}

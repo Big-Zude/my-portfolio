@@ -6,9 +6,7 @@ import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import { Divider } from '@material-ui/core';
-
-
+import { Divider, Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
@@ -18,8 +16,13 @@ const useStyles = makeStyles((theme) => ({
   cardContainer: {
     maxWidth: 345,
     margin: '3rem auto',
-    height: '80%',
+    height: '70%',
     boxSizing: 'border-box'
+  },
+  heading: {
+    padding: 10,
+    color: '#ffffff',
+    textTransform: 'uppercase'
   }
 }));
 
@@ -27,14 +30,14 @@ const articles = [
   {
     name: 'How To Post And Fetch Data Using React-query',
     description: `In this article, you will learn how to setup react-query to fetch and post data in your applications written in typescript/javascript and react functional components. Furthermore, you will learn what react-query is and its advantages.`,
-   
+
     link: 'https://zude.hashnode.dev/'
   },
   {
     name:
       'Fetching Covid-19 Data using React.js, Material UI, and Material-Table Part 2',
     description: `In this part, it’s all technical! We are going to write code for the Cards(functional component) and WordTable(class component) components. In addition to this, we are going to implement the Effect Hook(useState and useEffect) and the Fetch API.`,
-    
+
     link:
       'https://medium.com/analytics-vidhya/fetching-covid-19-data-using-react-js-material-ui-and-material-table-part-2-8a1f88a954ba'
   },
@@ -50,7 +53,6 @@ const articles = [
 const Article = () => {
   const classes = useStyles();
   return (
-    // <div className={classes.content}>
     <Box component="div" className={classes.mainContainer}>
       <Grid container justify="center">
         {/* Projects */}
@@ -64,7 +66,10 @@ const Article = () => {
                   </Typography>
                   <Divider style={{ color: '#FFD700' }} />
                   <Typography variant="h6" color="primary">
-                    <a href={article.link}>Read Here</a>
+                    <br/>
+                    <a href={article.link}>
+                      <Button color="primary" variant="contained">Read Here</Button>
+                    </a>
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -73,7 +78,6 @@ const Article = () => {
         ))}
       </Grid>
     </Box>
-    // </div>
   );
 };
 

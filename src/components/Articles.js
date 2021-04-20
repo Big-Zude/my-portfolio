@@ -61,14 +61,16 @@ const Article = () => {
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardContent>
-                  <Typography variant="h6" gutterBottom>
-                    <b>{article.name}</b>
+                  <Typography variant="h5" gutterBottom>
+                    {article.name}
                   </Typography>
-                  <Divider style={{ color: '#FFD700' }} />
+                  <Divider style={{ color: '#3f51b5' }} />
                   <Typography variant="h6" color="primary">
-                    <br/>
+                    <br />
                     <a href={article.link}>
-                      <Button color="primary" variant="contained">Read Here</Button>
+                      <Button color="primary" variant="contained">
+                        Read Here
+                      </Button>
                     </a>
                   </Typography>
                 </CardContent>

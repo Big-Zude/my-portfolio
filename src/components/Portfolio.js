@@ -71,10 +71,10 @@ const Portfolio = () => {
   return (
     // <div className={classes.content}>
     <Box component="div" className={classes.mainContainer}>
-      <Grid container justify="center">
+      <Grid container justify="left">
         {/* Projects */}
         {projects.map((project, i) => (
-          <Grid item xs={12} sm={8} md={4} key={i}>
+          <Grid item xs={3} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardContent>

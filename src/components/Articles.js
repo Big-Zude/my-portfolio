@@ -54,10 +54,10 @@ const Article = () => {
   const classes = useStyles();
   return (
     <Box component="div" className={classes.mainContainer}>
-      <Grid container justify="center">
+      <Grid container justify="left">
         {/* Projects */}
         {articles.map((article, index) => (
-          <Grid item xs={12} sm={8} md={4} key={index}>
+          <Grid item xs={3} key={index}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardContent>

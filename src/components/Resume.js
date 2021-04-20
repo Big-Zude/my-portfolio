@@ -2,12 +2,10 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Typography, Button } from '@material-ui/core';
 import Box from '@material-ui/core/Box';
-import resume from '../../src/resume.jpg';
 import GetAppRoundedIcon from '@material-ui/icons/GetAppRounded';
 
 const useStyles = makeStyles((theme) => ({
   mainContainer: {
-    // backgroundImage: `url(${resume})`,
     backgroundSize: 'contain'
   },
   timeLine: {

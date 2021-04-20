@@ -12,7 +12,7 @@ const Home = () => {
         bg={{
           position: 'absolute',
           zIndex: 999,
-          width: 800
+          width: 600
         }}
       />
     </div>

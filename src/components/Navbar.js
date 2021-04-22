@@ -20,6 +20,7 @@ import Footer from '../components/Footer';
 
 const useStyles = makeStyles((theme) => ({
   appbar: {
+    width: '100%',
     background: 'primary',
     margin: 0
   },
@@ -45,7 +46,8 @@ const useStyles = makeStyles((theme) => ({
   },
   listItem: {
     color: '#ffffff',
-    padding: 0
+    padding: 10,
+    borderRadius: 10
   },
   navbarDisplayFlex: {
     display: `flex`,
@@ -68,8 +70,12 @@ const menuItems = [
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-
+  const [selectedIndex, setSelectedIndex] = React.useState(0);
   const classes = useStyles();
+
+  const handleListItemClick = (event, index) => {
+    setSelectedIndex(index);
+  };
 
   const sideList = () => (
     <Box className={classes.menuSliderContainer} component="div">
@@ -85,9 +91,6 @@ const Navbar = () => {
             component={Link}
             to={item.listPath}
           >
-            <ListItemIcon className={classes.listItem}>
-              {item.listIcon}
-            </ListItemIcon>
             <ListItemText primary={item.listText} />
           </ListItem>
         ))}
@@ -107,7 +110,7 @@ const Navbar = () => {
               <Hidden mdUp>
                 <div className={classes.arrow}>
                   <IconButton onClick={() => setOpen(true)}>
-                    <MenuRoundedIcon style={{color:'#ffffff'}} />
+                    <MenuRoundedIcon style={{ color: '#ffffff' }} />
                   </IconButton>
                 </div>
               </Hidden>
@@ -122,13 +125,11 @@ const Navbar = () => {
                       button
                       key={i}
                       className={classes.listItem}
-                      onClick={() => setOpen(false)}
+                      selected={selectedIndex === i}
+                      onClick={(event) => handleListItemClick(event, i)}
                       component={Link}
                       to={item.listPath}
                     >
-                      <ListItemIcon className={classes.listItem}>
-                        {item.listIcon}
-                      </ListItemIcon>
                       <ListItemText primary={item.listText} />
                     </ListItem>
                   ))}

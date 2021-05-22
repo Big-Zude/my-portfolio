@@ -30,40 +30,40 @@ const projects = [
 
 `,
 
-    sourceCode: 'https://github.com/Big-Zude/Covid-19-Statistics'
+    sourceCode: 'https://github.com/Big-Zude/Covid-19-Statistics',
+    live: 'https://corona-virus-data.netlify.app/'
   },
   {
     name: 'Portfolio',
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi`,
+    description: `My personal profile, you can view information about me here e.g my work experience, skills and personal projects`,
     sourceCode: 'https://github.com/Big-Zude/my-portfolio',
     live: 'https://zude.netlify.app/'
   },
   {
-    name: 'Project 3',
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi`
-  },
-  {
-    name: 'Project 4',
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi`
-  },
-  {
-    name: 'Project 5',
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi`
-  },
-  {
-    name: 'Project 6',
-    description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
-    consequatur magni quod nesciunt necessitatibus molestiae non\
-    eligendi`
+    name: 'Setting up react-query with typescript',
+    description: `A simple project teaching you how to configure react-query with typescript`,
+    sourceCode:
+      'https://github.com/Big-Zude/post-and-fetching-with-react-query',
+    live: 'https://react-query-article.netlify.app/'
   }
+  // {
+  //   name: 'Project 4',
+  //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+  //   consequatur magni quod nesciunt necessitatibus molestiae non\
+  //   eligendi`
+  // },
+  // {
+  //   name: 'Project 5',
+  //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+  //   consequatur magni quod nesciunt necessitatibus molestiae non\
+  //   eligendi`
+  // },
+  // {
+  //   name: 'Project 6',
+  //   description: `Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis\
+  //   consequatur magni quod nesciunt necessitatibus molestiae non\
+  //   eligendi`
+  // }
 ];
 
 const Portfolio = () => {

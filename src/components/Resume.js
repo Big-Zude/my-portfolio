@@ -98,7 +98,7 @@ const useStyles = makeStyles((theme) => ({
     textTransform: 'uppercase'
   },
   subHeading: {
-    color: '#fff',
+    color: '#000000',
     padding: 0,
     textTransform: 'uppercase'
   },
@@ -123,7 +123,7 @@ const Resume = () => {
       </Typography>
       <div align="center">
         <a
-          href="https://drive.google.com/file/d/1GdjkCGIj4fPNZ70LSaNzhOIL6Q8_CEUR/view"
+          href="https://drive.google.com/file/d/17BZh4LJPPB9UXRf4mCjPO9sRXZWD6My5/view?usp=sharing"
           style={{ textDecoration: 'none' }}
         >
           <Button
@@ -159,11 +159,20 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            • Participate in Stand-ups • Participate in Sprint planning •
-            Undertake Human Centered Design and Design Thinking processes •
-            Participate in developing in-house Software Applications for the
-            Company and clients. • Maintain bongohive website • Monthly client
-            website security scan
+            • Currently Implementing Coding standards for the team to achieve
+            clean code and better documentation • Successfully designed,
+            developed, and implemented the frontend of an admin dashboard for an
+            e-commerce business with its client-facing running on USSD, iOS app,
+            and android app. • Successfully designed and engineered the frontend
+            of an admin dashboard for a transport and logistics company with its
+            client-facing app running on an android app. • Designed and
+            implemented some features of an admin dashboard at a lightning speed
+            for an information and management system using Adobe XD, Typescript,
+            React.js, Redux, react-query, material-UI •Successfully delivered
+            training to organizations on how they can adapt to working remotely
+            during the COVID-19 pandemic under the Deutsche Gesellschaft für
+            Internationale Zusammenarbeit (GIZ). I trained several organizations
+            on how to use slack.
           </Typography>
         </Box>
         <Typography
@@ -178,7 +187,7 @@ const Resume = () => {
             align="center"
             className={classes.subHeading}
           >
-            Frontend Software Developer Intern
+            Software Developer Intern
           </Typography>
           <Typography variant="body1" align="center" className={classes.body1}>
             BongoHive Consult
@@ -188,10 +197,15 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Participate in Stand-ups. Participate in Sprint planning. Undertake
-            Human Centered Design and Design Thinking processes. Participate in
-            developing in-house Software Applications for the Company and
-            clients.
+            • Successfully started the design and development of an in-house
+            solution which is a monitoring system for the startups that are
+            trained with various programs run by the organization • Successfully
+            implemented live exchanges rate on clients live website in
+            Javascript • Successfully Maintained and updated BongoHive's website
+            • Successfully Maintained and updated conservation farming unit
+            website • Participated and lead Stand-ups. • Participated and lead
+            Sprint planning. • Undertook Human-Centered Design and Design
+            Thinking processes.
           </Typography>
         </Box>
         <Typography
@@ -216,38 +230,14 @@ const Resume = () => {
             align="center"
             className={classes.subtitle1}
           >
-            Successfully completed the training program that included lessons on
-            internet service providers, file server configuration, network
-            troubleshoot and fixing,computer maintenance, customer care etc.
-            Provided technical support to co-workers.
+            • Successfully contributed to the File server configuration. •
+            Maintained Computers and Printers. • Successfully troubleshooter
+            networks and fixed the issues on various devices(windows server,
+            cisco switch, and Cisco routers) • Successfully provided technical
+            support to co-workers.
           </Typography>
         </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2017
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Data Entry
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Africa Infrastructure Consultants
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            Expansion Developments at East Park Mall Traffic counting and data
-            entry
-          </Typography>
-        </Box>
+        
       </Box>
     </Box>
   );

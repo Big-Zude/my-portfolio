@@ -1,12 +1,12 @@
-import React from "react";
-import { Particles as ReactParticles } from "react-particles-js";
-import { makeStyles } from "@material-ui/core/styles";
+import React from 'react';
+import { Particles as ReactParticles } from 'react-particles-js';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   particlesCanvas: {
-    position: "fixed",
-    opacity: "0.8"
-  },
+    position: 'fixed',
+    opacity: '0.8'
+  }
 }));
 
 const Particles = () => {
@@ -21,15 +21,15 @@ const Particles = () => {
             value: 45,
             density: {
               enable: true,
-              value_area: 800,
-            },
+              value_area: 800
+            }
           },
           shape: {
-            type: "polygon mask",
+            type: 'circle',
             stroke: {
               width: 3,
-              color: "tomato",
-            },
+              color: 'tomato'
+            }
           },
           size: {
             value: 8,
@@ -38,8 +38,8 @@ const Particles = () => {
               enable: false,
               speed: 6,
               size_min: 0,
-              sync: true,
-            },
+              sync: true
+            }
           },
           opacity: {
             value: 0.5,
@@ -48,10 +48,10 @@ const Particles = () => {
               enable: true,
               speed: 2,
               opacity_min: 0.1,
-              sync: false,
-            },
-          },
-        },
+              sync: false
+            }
+          }
+        }
       }}
     />
   );

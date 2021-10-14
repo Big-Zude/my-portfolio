@@ -57,7 +57,7 @@ const Article = () => {
       <Grid container justify="left">
         {/* Projects */}
         {articles.map((article, index) => (
-          <Grid item xs={3} key={index}>
+          <Grid item xs={12} sm={3} key={index}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardContent>

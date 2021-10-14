@@ -74,7 +74,7 @@ const Portfolio = () => {
       <Grid container justify="left">
         {/* Projects */}
         {projects.map((project, i) => (
-          <Grid item xs={3} key={i}>
+          <Grid item xs={12} sm={3} key={i}>
             <Card className={classes.cardContainer}>
               <CardActionArea>
                 <CardContent>

@@ -20,7 +20,8 @@ import Footer from '../components/Footer';
 const useStyles = makeStyles((theme) => ({
   appbar: {
     width: '100%',
-    background: 'primary',
+    background: 'transparent',
+    boxShadow: 'none',
     margin: 0
   },
   arrow: {

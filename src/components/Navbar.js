@@ -20,7 +20,8 @@ import Footer from '../components/Footer';
 const useStyles = makeStyles((theme) => ({
   appbar: {
     width: '100%',
-    background: 'transparent',
+    backgroundColor: '#000000',
+    opacity: 0.5,
     boxShadow: 'none',
     margin: 0
   },
@@ -62,9 +63,9 @@ const useStyles = makeStyles((theme) => ({
 
 const menuItems = [
   { listText: 'Home', listPath: '/' },
-  { listText: 'Experience', listPath: '/resume' },
-  { listText: 'Articles', listPath: '/article' },
+  // { listText: 'Experience', listPath: '/resume' },
   { listText: 'Projects', listPath: '/portfolio' },
+  { listText: 'Articles', listPath: '/article' },
   { listText: 'Contact', listPath: '/contact' }
 ];
 

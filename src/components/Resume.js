@@ -58,8 +58,7 @@ const useStyles = makeStyles((theme) => ({
       margin: '1rem',
       '&:nth-of-type(2n)': {
         float: 'right',
-        margin: '1rem',
-        
+        margin: '1rem'
       },
       '&:nth-of-type(2n):before': {
         right: 'auto',
@@ -117,129 +116,142 @@ const useStyles = makeStyles((theme) => ({
 const Resume = () => {
   const classes = useStyles();
   return (
-    <Box component="header" className={classes.mainContainer}>
-      <Typography variant="h4" align="center" className={classes.heading}>
-        Experience
-      </Typography>
-      <div align="center">
-        <a
-          href="https://drive.google.com/file/d/17BZh4LJPPB9UXRf4mCjPO9sRXZWD6My5/view?usp=sharing"
-          style={{ textDecoration: 'none' }}
-        >
-          <Button
-            className={classes.btn}
-            variant="contained"
-            size="large"
-            endIcon={<GetAppRoundedIcon />}
-          >
-            <Typography>Download Resume</Typography>
-          </Button>
-        </a>
-      </div>
-      <Box component="div" className={classes.timeLine}>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2020
+    <div>
+      <Box component="header" className={classes.mainContainer}>
+        <Typography variant="h4" align="center" className={classes.heading}>
+          Experience
         </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
+        <div align="center">
+          <a
+            href="https://drive.google.com/file/d/17BZh4LJPPB9UXRf4mCjPO9sRXZWD6My5/view?usp=sharing"
+            style={{ textDecoration: 'none' }}
           >
-            Frontend Software Developer
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            BongoHive Consult
-          </Typography>
+            <Button
+              className={classes.btn}
+              variant="contained"
+              size="large"
+              endIcon={<GetAppRoundedIcon />}
+            >
+              <Typography>Download Resume</Typography>
+            </Button>
+          </a>
+        </div>
+        <Box component="div" className={classes.timeLine}>
           <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
           >
-            • Currently Implementing Coding standards for the team to achieve
-            clean code and better documentation • Successfully designed,
-            developed, and implemented the frontend of an admin dashboard for an
-            e-commerce business with its client-facing running on USSD, iOS app,
-            and android app. • Successfully designed and engineered the frontend
-            of an admin dashboard for a transport and logistics company with its
-            client-facing app running on an android app. • Designed and
-            implemented some features of an admin dashboard at a lightning speed
-            for an information and management system using Adobe XD, Typescript,
-            React.js, Redux, react-query, material-UI •Successfully delivered
-            training to organizations on how they can adapt to working remotely
-            during the COVID-19 pandemic under the Deutsche Gesellschaft für
-            Internationale Zusammenarbeit (GIZ). I trained several organizations
-            on how to use slack.
+            2020
           </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Frontend Software Developer
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              className={classes.body1}
+            >
+              BongoHive Consult
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              className={classes.subtitle1}
+            >
+              • Currently Implementing Coding standards for the team to achieve
+              clean code and better documentation • Successfully designed,
+              developed, and implemented the frontend of an admin dashboard for
+              an e-commerce business with its client-facing running on USSD, iOS
+              app, and android app. • Successfully designed and engineered the
+              frontend of an admin dashboard for a transport and logistics
+              company with its client-facing app running on an android app. •
+              Designed and implemented some features of an admin dashboard at a
+              lightning speed for an information and management system using
+              Adobe XD, Typescript, React.js, Redux, react-query, material-UI
+              •Successfully delivered training to organizations on how they can
+              adapt to working remotely during the COVID-19 pandemic under the
+              Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ). I
+              trained several organizations on how to use slack.
+            </Typography>
+          </Box>
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+            2019
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Software Developer Intern
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              className={classes.body1}
+            >
+              BongoHive Consult
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              className={classes.subtitle1}
+            >
+              • Successfully started the design and development of an in-house
+              solution which is a monitoring system for the startups that are
+              trained with various programs run by the organization •
+              Successfully implemented live exchanges rate on clients live
+              website in Javascript • Successfully Maintained and updated
+              BongoHive's website • Successfully Maintained and updated
+              conservation farming unit website • Participated and lead
+              Stand-ups. • Participated and lead Sprint planning. • Undertook
+              Human-Centered Design and Design Thinking processes.
+            </Typography>
+          </Box>
+          <Typography
+            variant="h2"
+            className={`${classes.timeLineYear} ${classes.timeLineItem}`}
+          >
+            2018
+          </Typography>
+          <Box component="div" className={classes.timeLineItem}>
+            <Typography
+              variant="h5"
+              align="center"
+              className={classes.subHeading}
+            >
+              Information Technology Intern
+            </Typography>
+            <Typography
+              variant="body1"
+              align="center"
+              className={classes.body1}
+            >
+              Zambia National Broadcasting Corporation
+            </Typography>
+            <Typography
+              variant="subtitle1"
+              align="center"
+              className={classes.subtitle1}
+            >
+              • Successfully contributed to the File server configuration. •
+              Maintained Computers and Printers. • Successfully troubleshooter
+              networks and fixed the issues on various devices(windows server,
+              cisco switch, and Cisco routers) • Successfully provided technical
+              support to co-workers.
+            </Typography>
+          </Box>
         </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2019
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Software Developer Intern
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            BongoHive Consult
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            • Successfully started the design and development of an in-house
-            solution which is a monitoring system for the startups that are
-            trained with various programs run by the organization • Successfully
-            implemented live exchanges rate on clients live website in
-            Javascript • Successfully Maintained and updated BongoHive's website
-            • Successfully Maintained and updated conservation farming unit
-            website • Participated and lead Stand-ups. • Participated and lead
-            Sprint planning. • Undertook Human-Centered Design and Design
-            Thinking processes.
-          </Typography>
-        </Box>
-        <Typography
-          variant="h2"
-          className={`${classes.timeLineYear} ${classes.timeLineItem}`}
-        >
-          2018
-        </Typography>
-        <Box component="div" className={classes.timeLineItem}>
-          <Typography
-            variant="h5"
-            align="center"
-            className={classes.subHeading}
-          >
-            Information Technology Intern
-          </Typography>
-          <Typography variant="body1" align="center" className={classes.body1}>
-            Zambia National Broadcasting Corporation
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            align="center"
-            className={classes.subtitle1}
-          >
-            • Successfully contributed to the File server configuration. •
-            Maintained Computers and Printers. • Successfully troubleshooter
-            networks and fixed the issues on various devices(windows server,
-            cisco switch, and Cisco routers) • Successfully provided technical
-            support to co-workers.
-          </Typography>
-        </Box>
-        
       </Box>
-    </Box>
+    </div>
   );
 };
 

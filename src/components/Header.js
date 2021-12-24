@@ -1,11 +1,12 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import { Typography } from '@material-ui/core';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Typed from 'react-typed';
 import { makeStyles } from '@material-ui/core/styles';
 import avatar from '../zude1.jpg';
+import '../App.css';
 
 const useStyles = makeStyles((theme) => ({
   avatar: {
@@ -53,7 +54,6 @@ const Header = () => {
           <Typed
             strings={[
               'UI/UX Designer',
-              'Photographer',
               'Content creator',
               'Technical Writer',
               'Frontend Developer'
@@ -62,6 +62,16 @@ const Header = () => {
             backSpeed={50}
           />
         </Typography>
+        <div className="box-2">
+          <a
+            href="https://drive.google.com/file/d/17BZh4LJPPB9UXRf4mCjPO9sRXZWD6My5/view?usp=sharing"
+            style={{ textDecoration: 'none' }}
+          >
+            <div class="btn btn-two">
+              <Typography>Download Resume</Typography>
+            </div>
+          </a>
+        </div>
       </Box>
     </div>
   );
